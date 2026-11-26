@@ -1,0 +1,6 @@
+{
+  "name": "Aura Creativa | Estudio de Eventos, Decoración & Cerámicas",
+  "description": "Estudio boutique de diseño y decoración de eventos, arte con globos, cerámicas personalizadas, anchetas de lujo y simulador interactivo 3D con Realidad Aumentada.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-fondo-principal: #FFFDFB;
+    --color-rosa-suave: #FDF2F4;
+    --color-rosa-pastel: #F7D4DA;
+    --color-rosa-coral: #EB7B82;
+    --color-rosa-fuerte: #C84673;
+    --color-amarillo-pastel: #F9E59A;
+    --color-amarillo-suave: #FDF6D7;
+    --color-beige-crema: #F7EFE6;
+    --color-texto-oscuro: #3A2529;
+    --color-texto-suave: #75565C;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto-oscuro);
+  }
+
+  h1, h2, h3, .font-serif-display {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Editorial boutique backgrounds inspired by paper-craft & studio lookbooks */
+.bg-editorial-grid {
+  background-color: #FFFDFB;
+  background-image:
+    linear-gradient(to right, rgba(246, 207, 214, 0.38) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(246, 207, 214, 0.38) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-pastel-stripes {
+  background-color: #FFFDFB;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #FCE9EC 0px,
+    #FCE9EC 22px,
+    #FFFDFB 22px,
+    #FFFDFB 44px
+  );
+}
+
+.bg-checkered-ribbon {
+  background-color: #FFFDFB;
+  background-image:
+    linear-gradient(45deg, #F6CFD6 25%, transparent 25%),
+    linear-gradient(-45deg, #F6CFD6 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #C84673 75%),
+    linear-gradient(-45deg, transparent 75%, #C84673 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+}
+
+/* Custom scrollbars for refined boutique look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDFB;
+}
+::-webkit-scrollbar-thumb {
+  background: #F0B6C2;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C84673;
+}
