@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Navbar } from './components/layout/Navbar';
 import { HeroSection } from './components/layout/HeroSection';
 import { SimulatorMain } from './components/simulator/SimulatorMain';
@@ -145,6 +146,7 @@ export default function App() {
         onOpenSimulatorAsAdmin={scrollToSimulator}
         shopProducts={SHOP_PRODUCTS}
       />
+      <Analytics />
     </div>
   );
 }
